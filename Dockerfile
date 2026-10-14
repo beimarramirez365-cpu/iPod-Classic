@@ -1,6 +1,7 @@
-FROM node: 15
+FROM node:16-alpine    
 WORKDIR /app
-COPY . .
+COPY package*.json ./
 RUN npm install
+COPY . .
 EXPOSE 3000
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["npm", "start"]
