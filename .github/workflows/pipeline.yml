@@ -10,6 +10,9 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      - name: Checkout codig
+        uses: actions/checkout@v4
+
       - name: Step 1 - B  asic Echo
         run: echo "Hello! This is a simple GitHub Actions pipeline."
 
