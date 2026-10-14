@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout codig
+      - name: Checkout codigo
         uses: actions/checkout@v4
 
       - name: Step 1 - B  asic Echo
