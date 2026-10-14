@@ -1,4 +1,4 @@
-name: nombre del pipeline
+name: pipeline-workflow
 on:
   push:
     branches: [ "main" ]
