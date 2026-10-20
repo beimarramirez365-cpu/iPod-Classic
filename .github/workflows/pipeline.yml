@@ -21,3 +21,12 @@ jobs:
 
       - name: step 3 
         run: docker build -t image-ipod-c2 .
+  deploy-job:
+    name: Run deploy
+    runs-on: self-hosted
+
+    steps: 
+      - name: deploy
+
+        run: docker run -P image-ipod-c2
+
