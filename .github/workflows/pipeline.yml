@@ -30,4 +30,4 @@ jobs:
     steps: 
       - name: deploy
         # run: docker run -P image-ipod-c2
-        run: docker run -d -P --name contenedor-ipod-c2 image-ipod-c2
+        run: docker run -d -t -P --name contenedor-ipod-c2 image-ipod-c2
