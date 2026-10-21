@@ -20,7 +20,7 @@ jobs:
         run: 'echo "The current date and time is: $(date)"'
 
       - name: step 3 
-        run: docker build -t image-ipod-c2 .
+        run: docker build -t image-ipod-c2
   deploy-job:
     name: Run deploy
     runs-on: self-hosted
